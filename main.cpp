@@ -1,7 +1,7 @@
 #include "fem/fem.hpp"
 #include "flatset/flatset.hpp"
 #include "filesystem/filesystem.hpp"
-//#include "yamlParser/yamlParser.hpp"
+#include "yamlParser/yamlParser.hpp"
 #include <iostream>
 
 int main()
@@ -21,8 +21,8 @@ int main()
   inspectDirectory();
   std::cout << std::endl;
 
-  //std::cout << "Parse some yaml file with yaml-cpp" << std::endl;
-  //parseConfig();
+  std::cout << "Parse some yaml file with yaml-cpp" << std::endl;
+  parseConfig();
 
   return 0;
 }
