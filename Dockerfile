@@ -20,3 +20,9 @@ RUN apt-get update \
 # Install newer yaml-cpp
 COPY install-yaml-cpp /usr/local/bin/install-yaml-cpp
 RUN install-yaml-cpp
+
+# Install build helper script
+COPY build-project /usr/local/bin/build-project
+
+# Default to building the project on run
+CMD ["./build-project"]
