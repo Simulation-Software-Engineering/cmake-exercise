@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script builds the project in docker. It assumes docker is installed and
+# your user is in the docker group.
+
+docker build -t a_meaningful_project_name .
+docker run --rm --user $(id -u) -v $PWD:/var/src/ex a_meaningful_project_name

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script runs the previously compiled binary in the docker container.
+
+if [ $# -ne 0 ]; then
+    docker run --rm -it --user $(id -u) -v $PWD:/var/src/ex local $@
+else
+    docker run --rm -it --user $(id -u) -v $PWD:/var/src/ex local build/a_meaningful_project_name
+fi
