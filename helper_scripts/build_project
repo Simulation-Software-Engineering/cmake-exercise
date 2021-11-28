@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script is responsible for compiling the main cpp file
+
+rm -rf build
+mkdir -p build
+pushd build
+cmake ..
+make -j
+popd
