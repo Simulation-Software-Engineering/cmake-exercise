@@ -26,11 +26,11 @@ find_package(yaml-cpp REQUIRED)
 message("Found MPI ${MPI_VERSION} at ${MPI_LIBRARY_DIRS}")
 message("Found Boost ${Boost_VERSION} at ${Boost_LIBRARY_DIRS}")
 message("Found deal.II ${DEAL_II_VERSION} at ${DEAL_II_PATH}")
-message("Found yaml-cpp ${YAML_CPP_VERSION} at ${YAML_CPP_INCLUDE_DIRS}")
+message("Found yaml-cpp ${yaml-cpp_VERSION} at ${yaml-cpp_DIR}")
 
 # Setup library specific stuff
 include_directories("${MPI_INCLUDE_PATH}")
-# include_directories("${YAML_CPP_INCLUDE_DIRS}")
+include_directories("${yaml-cpp_DIR}")
 DEAL_II_INITIALIZE_CACHED_VARIABLES()
 
 # Add the binary target and link against it
