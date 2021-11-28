@@ -4,11 +4,11 @@ project("a_meaningful_project_name")
 
 # Find all files
 set(SRC_FILES
-    main.cpp
-    fem/fem.cpp
-    flatset/flatset.cpp
-    filesystem/filesystem.cpp
-    yamlParser/yamlParser.cpp)
+    src/main.cpp
+    src/fem/fem.cpp
+    src/flatset/flatset.cpp
+    src/filesystem/filesystem.cpp
+    src/yamlParser/yamlParser.cpp)
 message("Compiling the following files: ${SRC_FILES}")
 
 # Find all libraries
