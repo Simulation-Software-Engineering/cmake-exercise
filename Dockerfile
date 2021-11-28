@@ -25,4 +25,4 @@ RUN install-yaml-cpp
 COPY helper_scripts/build-project /usr/local/bin/build-project
 
 # Default to building the project on run
-CMD ["./build-project"]
+CMD ["build-project"]
