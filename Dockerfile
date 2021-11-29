@@ -22,11 +22,8 @@ RUN /usr/local/bin/inittimezone
 # Install required software
 RUN apt update -y
 RUN apt install -y cmake build-essential libdeal.ii-dev
- 
-RUN apt install -y vim
-
 RUN apt-get update -y
 RUN apt-get install -y libboost-all-dev
 
 # Run programm
-RUN mkdir build && cd build && cmake .. && make && ./main
+RUN mkdir build && cd build && cmake .. && make && ./cmake_exercise
