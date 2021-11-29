@@ -1,3 +1,0 @@
-/home/hornekte/sse/cmake-exercise/build/CMakeFiles/rebuild_cache.dir
-/home/hornekte/sse/cmake-exercise/build/CMakeFiles/edit_cache.dir
-/home/hornekte/sse/cmake-exercise/build/CMakeFiles/cmake_exercise.dir

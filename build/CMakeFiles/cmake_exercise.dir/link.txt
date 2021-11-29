@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/cmake_exercise.dir/main.cpp.o CMakeFiles/cmake_exercise.dir/flatset/flatset.cpp.o CMakeFiles/cmake_exercise.dir/filesystem/filesystem.cpp.o  -o cmake_exercise  /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 
