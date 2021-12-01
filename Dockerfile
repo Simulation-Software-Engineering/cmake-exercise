@@ -9,6 +9,8 @@ RUN apt-get update && apt-get -y install build-essential cmake git-all wget
 
 RUN apt-get install -y libboost-all-dev libdeal.ii-dev
 
-RUN git clone https://github.com/Ovakefali13/cmake-exercise.git && cd cmake-exercise && mkdir build && cd build && cmake .. && make
+RUN git clone https://github.com/Ovakefali13/cmake-exercise.git
+
+RUN cd cmake-exercise && mkdir build && cd build && cmake .. && make
 
 CMD ["/bin/bash"]
