@@ -1,9 +1,6 @@
 FROM ubuntu:18.04
 
-RUN apt-get update
-RUN apt-get install -y  
-
-ENTRYPOINT ["/bin/bash"]
+RUN apt-get update -y  
 
 RUN apt-get install -y git
 RUN git clone https://github.com/EvanA93/cmake-exercise.git
