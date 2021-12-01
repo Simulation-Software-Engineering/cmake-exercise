@@ -9,6 +9,10 @@ FIND_PACKAGE(deal.II
     HINTS ${DEAL_II_DIR} ../ ../../ $ENV{DEAL_II_DIR}
 )
 
+find_package(MPI REQUIRED)
+
+include_directories("${MPI_INCLUDE_PATH}")
+
 DEAL_II_INITIALIZE_CACHED_VARIABLES()
 
 # add the executable
