@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-WORKDIR /cmake-exercise
+WORKDIR /cmake_exercise
 
 COPY inittimezone /usr/local/bin/inittimezone
 ENV TZ=Europe/Berlin
@@ -9,6 +9,6 @@ RUN chmod 777 /usr/local/bin/inittimezone && apt update && apt-get -y install bu
 
 RUN git clone https://github.com/Ovakefali13/cmake-exercise.git
 
-#RUN mkdir build && cd build && cmake .. && make
+RUN cd cmake-exercise && mkdir build && cd build && cmake .. && make
 
 CMD ["/bin/bash"]
