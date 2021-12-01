@@ -10,8 +10,8 @@ RUN git clone https://github.com/EvanA93/cmake-exercise.git
 
 WORKDIR /cmake-exercise
 
-COPY inittimezone /usr/local/bin/inittimezone
-RUN /usr/local/bin/inittimezone
+#COPY inittimezone /usr/local/bin/inittimezone
+#RUN /usr/local/bin/inittimezone
 
 RUN apt-get install -y build-essential && apt-get install -y cmake && apt-get install -y libboost-all-dev\
 && apt-get install -y libdeal.ii-dev && apt-get install -y libopenmpi-dev

@@ -16,7 +16,7 @@ include_directories("${MPI_INCLUDE_PATH}")
 DEAL_II_INITIALIZE_CACHED_VARIABLES()
 
 # add the executable
-add_executable(CMakeExercise main.cpp flatset/flatset.cpp filesystem/filesystem.cpp fem/fem.cpp)
+add_executable(CMakeExercise main.cpp fem/fem.cpp flatset/flatset.cpp filesystem/filesystem.cpp)
 #fem/fem.cpp
 
 target_link_libraries(CMakeExercise Boost::filesystem)
