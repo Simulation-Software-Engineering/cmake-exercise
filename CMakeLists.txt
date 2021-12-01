@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION "3.12")
 project("cmake_excercise")
 
 
-add_executable(cmake_excercise main.cpp flatset/flatset.cpp filesystem/filesystem.cpp fem/fem.cpp yamlParser/yamlParser.cpp)
+add_executable(cmake_excercise main.cpp flatset/flatset.cpp filesystem/filesystem.cpp fem/fem.cpp)
 target_include_directories("${CMAKE_PROJECT_NAME}" PRIVATE flatset filesystem)
-FIND_PACKAGE(deal.II 9.3.0 REQUIRED
+FIND_PACKAGE(deal.II 9.1.0 REQUIRED
   HINTS ${DEAL_II_DIR} ../ ../../ $ENV{DEAL_II_DIR}
   )
 DEAL_II_INITIALIZE_CACHED_VARIABLES()
