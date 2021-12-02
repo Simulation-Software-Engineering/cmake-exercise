@@ -1,13 +1,12 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION "3.12")
 
 # set the project name
 project(CMakeExercise)
+set(CMAKE_BUILD_TYPE Release)
 
 find_package(Boost COMPONENTS filesystem)
 
-FIND_PACKAGE(deal.II
-    HINTS ${DEAL_II_DIR} ../ ../../ $ENV{DEAL_II_DIR}
-)
+FIND_PACKAGE(deal.II REQUIRED)
 
 find_package(MPI REQUIRED)
 
