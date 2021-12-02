@@ -1,6 +1,6 @@
-//#include "fem/fem.hpp"
-//#include "flatset/flatset.hpp"
-//#include "filesystem/filesystem.hpp"
+#include "fem/fem.hpp"
+#include "flatset/flatset.hpp"
+#include "filesystem/filesystem.hpp"
 //#include "yamlParser/yamlParser.hpp"
 #include <iostream>
 
