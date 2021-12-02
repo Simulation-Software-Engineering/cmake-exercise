@@ -1,0 +1,3 @@
+# files and folders to be ignored by Git within this repository
+build
+solution.vtk
