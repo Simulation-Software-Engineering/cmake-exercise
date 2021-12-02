@@ -2,9 +2,7 @@ cmake_minimum_required(VERSION "3.12")
 
 # set the project name
 project(CMakeExercise)
-set(CMAKE_BUILD_TYPE Release)
-
-set(CMAKE_BUID_TYPE Release) 
+set(CMAKE_BUILD_TYPE Release) 
 
 find_package(Boost COMPONENTS filesystem)
 
