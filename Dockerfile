@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     ca-certificates \
     libboost-all-dev \
+    libdeal.ii-dev \
  && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
