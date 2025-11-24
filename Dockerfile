@@ -24,8 +24,6 @@ RUN wget https://github.com/jbeder/yaml-cpp/archive/yaml-cpp-0.6.3.tar.gz && \
     cd / && \
     rm -rf /tmp/yaml-cpp-*
 
-WORKDIR /cmake-exercise
-
-COPY . .
+COPY . /cmake-exercise
 
 CMD ["/bin/bash"]
