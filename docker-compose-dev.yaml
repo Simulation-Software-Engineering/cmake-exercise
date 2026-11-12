@@ -1,0 +1,5 @@
+services:
+
+    cmake-exercise:
+        container_name: cmake-exercise
+        build: .

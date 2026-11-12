@@ -1,0 +1,10 @@
+.devcontainer
+.dockerignore
+.git
+.gitignore
+Dockerfile
+build
+build_and_run.sh
+docker-compose-dev.yaml
+LICENSE
+README.md
