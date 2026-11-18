@@ -3,5 +3,5 @@
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
-make
+cmake --build .
 ./main ../yamlParser/config.yml
