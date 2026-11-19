@@ -8,10 +8,9 @@ deal_ii_initialize_cached_variables()
 
 find_package(yaml-cpp REQUIRED)
 
-file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS **/*.cpp)
+set(SRC_FILES fem/fem.cpp flatset/flatset.cpp filesystem/filesystem.cpp yamlParser/yamlParser.cpp)
 
-add_library(lib "${SRC_FILES}")
-add_executable(main main.cpp)
+add_executable(main main.cpp "${SRC_FILES}")
 
-target_link_libraries(main lib Boost::filesystem yaml-cpp)
+target_link_libraries(main Boost::filesystem yaml-cpp)
 deal_ii_setup_target(main)
