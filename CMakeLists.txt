@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION "3.12")
 
+find_package(deal.II 9.5.0 REQUIRED)
+deal_ii_initialize_cached_variables()
 project("cmake-docker")
 
 find_package(Boost 1.67.0 REQUIRED COMPONENTS filesystem)
+add_executable(main main.cpp flatset/flatset.cpp filesystem/filesystem.cpp fem/fem.cpp)
+deal_ii_setup_target(main)
 
-add_executable(main main.cpp flatset/flatset.cpp filesystem/filesystem.cpp)
 
-target_link_libraries(main PRIVATE Boost::filesystem)
+target_link_libraries(main Boost::filesystem)
