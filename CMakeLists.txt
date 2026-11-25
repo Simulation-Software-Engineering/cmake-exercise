@@ -20,4 +20,4 @@ add_executable(main
 )
 
 deal_ii_setup_target(main)
-target_link_libraries(main Boost::container Boost::filesystem yaml-cpp::yaml-cpp)
+target_link_libraries(main Boost::container Boost::filesystem yaml-cpp)
